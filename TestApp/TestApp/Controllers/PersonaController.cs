@@ -12,7 +12,7 @@ namespace TestApp.Controllers
         PersonaDbContext _db = new PersonaDbContext();
         public ActionResult Index()
         {
-            var personas = _db.Personas.ToList();
+            var personas = _db.Persona.ToList();
             return View(personas);
         }
     }

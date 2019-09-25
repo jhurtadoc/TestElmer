@@ -87,3 +87,4 @@ C:\Repositorios\Andisa\Workana\TestElmer\TestApp\TestApp\bin\roslyn\System.Net.H
 C:\Repositorios\Andisa\Workana\TestElmer\TestApp\TestApp\bin\roslyn\System.Net.Sockets.dll
 C:\Repositorios\Andisa\Workana\TestElmer\TestApp\TestApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Repositorios\Andisa\Workana\TestElmer\TestApp\TestApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Repositorios\Andisa\Workana\TestElmer\TestApp\TestApp\bin\EntityFramework.xml

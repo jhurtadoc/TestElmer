@@ -8,10 +8,14 @@ namespace TestApp.Models
 {
     public class PersonaDbContext: DbContext
     {
-        public PersonaDbContext(): base("name=VictoriaBD")
+        public PersonaDbContext()
+           : base("name=VictoriaBD")
         {
         }
+        public virtual DbSet<Persona> Persona { get; set; }
 
-        public DbSet<Persona> Personas { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model TestApp.Models.Persona
+﻿@model List<TestApp.Models.Persona>
 
 @{
     Layout = null;
@@ -14,22 +14,39 @@
 <body>
     <div>
      <h3>Listado de Personas</h3>
-    <table>
-        <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                Nombre
-            </th>
-            <th>
-                Direccion
-            </th>
-            <th>
-                Soltero
-            </th>
-        </tr>
-    </table>
+     <table>
+         <thead>
+         Id
+         </thead>
+         <thead>
+             Nombre
+         </thead>
+         <thead>
+             Direccion
+         </thead>
+         <thead>
+             Soltero
+         </thead>
+         <tbody>
+             <tr>
+                 @foreach (var persona in Model)
+                 {
+                     <td>
+                         @persona.IdPersona
+                     </td>
+                     <td>
+                         @persona.Nombre
+                     </td>
+                     <td>
+                         @persona.Direccion
+                     </td>
+                     <td>
+                         @(persona.EsSoltero ? "Si" : "No")
+                     </td>
+                 }
+             </tr>
+         </tbody>
+     </table>
     </div>
 </body>
 </html>
